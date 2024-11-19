@@ -803,3 +803,32 @@ cp -r /home/vagrant/UTN-FRA_SO_Examenes/202406/
 cp -r /home/vagrant/UTN-FRA_SO_Examenes/202406/ /home/vagrant/UTNFRA_SO_2do_Parcial_Esquivel/
 cp -r /home/vagrant/RTA_Examen_20241117/ /home/vagrant/UTNFRA_SO_2do_Parcial_Esquivel/
 history -a
+cp $HOME/.bash_history /home/vagrant/UTNFRA_SO_2do_Parcial_Esquivel/
+cd /home/vagrant/UTNFRA_SO_2do_Parcial_Esquivel/
+git add .
+git commit -m "Se pushea el contenido al repositorio"
+git config --global user.email martinesquivel323232@gmail.com
+git config --global user.name martinsznesquivel
+git commit -m "Se pushea el contenido al repositorio"
+git push origin main
+ssh-keygen -t rsa -b 4096 -C martinesquivel323232@gmail.com
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+clear
+git push origin main
+clear
+git status
+git push .
+git add .
+git status
+ls -l
+tree
+HOME/.bash_history
+$HOME/.bash_history
+sudo $HOME/.bash_history
+cp $HOME/.bash_history ./
+tree
+clear
+tree
